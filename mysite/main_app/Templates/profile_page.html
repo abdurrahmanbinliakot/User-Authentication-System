@@ -7,6 +7,7 @@
     <title>{{request.user.first_name}} {{request.user.last_name}}'s Profile Page</title>
 </head>
 <body>
+    {{forms}}
     <a href="{% url 'logout' %}"><button>LogOut</button></a>
 </body>
 </html>

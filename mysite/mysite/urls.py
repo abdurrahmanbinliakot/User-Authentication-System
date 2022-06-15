@@ -17,12 +17,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-from main_app import main_app_url
+from main_app import user_auth_url
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(main_app_url))
+    path('', include(user_auth_url))
 ]
 
 
